@@ -38,6 +38,9 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="cancelPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ifJ-Tv-MDZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCU-n8-IhS">
                                 <rect key="frame" x="37" y="611" width="110" height="36"/>
@@ -59,21 +62,37 @@
                                 <fontDescription key="fontDescription" name="Optima-BoldItalic" family="Optima" pointSize="40"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="dPd-c2-sNX">
+                            <stepper opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="dPd-c2-sNX">
                                 <rect key="frame" x="281" y="228" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="stepperControls:" destination="BYZ-38-t0r" eventType="valueChanged" id="NP2-rF-aC6"/>
+                                    <action selector="stepperOne:" destination="BYZ-38-t0r" eventType="valueChanged" id="GwP-sz-rJO"/>
+                                </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="poB-7m-1j9">
                                 <rect key="frame" x="281" y="304" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="stepperControls:" destination="BYZ-38-t0r" eventType="valueChanged" id="92F-ph-qy7"/>
+                                    <action selector="stepperTwo:" destination="BYZ-38-t0r" eventType="valueChanged" id="otm-h0-22h"/>
+                                </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Yht-Gf-And">
                                 <rect key="frame" x="281" y="457" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="stepperControls:" destination="BYZ-38-t0r" eventType="valueChanged" id="Asg-QZ-TC4"/>
+                                    <action selector="stepperThree:" destination="BYZ-38-t0r" eventType="valueChanged" id="DRn-yX-1zT"/>
+                                </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="mP3-It-3kv">
                                 <rect key="frame" x="281" y="375" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="stepperControls:" destination="BYZ-38-t0r" eventType="valueChanged" id="BFf-dG-tv6"/>
+                                    <action selector="stepperThree:" destination="BYZ-38-t0r" eventType="valueChanged" id="pmF-LG-HuP"/>
+                                </connections>
                             </stepper>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Enter List Item" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mes-SD-bSG">
                                 <rect key="frame" x="0.0" y="185" width="281" height="72"/>
@@ -96,12 +115,16 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Enter List Item" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Y9W-KH-vZ6">
                                 <rect key="frame" x="0.0" y="496" width="281" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="XFT-OY-WPG">
                                 <rect key="frame" x="281" y="539" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="stepperControls:" destination="BYZ-38-t0r" eventType="valueChanged" id="u44-lj-aGo"/>
+                                    <action selector="stepperFive:" destination="BYZ-38-t0r" eventType="valueChanged" id="Bcd-Nt-zfu"/>
+                                </connections>
                             </stepper>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cue-wt-bCu">
                                 <rect key="frame" x="0.0" y="170" width="200" height="13"/>
@@ -160,6 +183,22 @@
                     </view>
                     <connections>
                         <outlet property="cancelPressed_btn" destination="ZW4-SH-AnY" id="b47-QP-Wx7"/>
+                        <outlet property="label1" destination="usR-OB-8fu" id="Z8M-Fv-Vl7"/>
+                        <outlet property="label2" destination="DGi-So-9q1" id="OZz-8D-Wnm"/>
+                        <outlet property="label3" destination="zCI-tm-YbN" id="0wZ-7K-hFz"/>
+                        <outlet property="label4" destination="W7l-xZ-Z2Z" id="cV1-LI-y8f"/>
+                        <outlet property="label5" destination="m9H-He-NQl" id="5BC-MI-hg2"/>
+                        <outlet property="list1" destination="mes-SD-bSG" id="rMi-8W-t17"/>
+                        <outlet property="list2" destination="E3Q-fD-0f9" id="CBH-hI-6z3"/>
+                        <outlet property="list3" destination="rDT-cY-9aX" id="OUL-DH-IpZ"/>
+                        <outlet property="list4" destination="G0K-eV-3rq" id="Jgi-DX-XGW"/>
+                        <outlet property="list5" destination="Y9W-KH-vZ6" id="ySZ-bK-bGP"/>
+                        <outlet property="minusQ1" destination="dPd-c2-sNX" id="Bo4-gF-bcV"/>
+                        <outlet property="qunFour" destination="XFT-OY-WPG" id="e3k-aZ-723"/>
+                        <outlet property="qunOne" destination="dPd-c2-sNX" id="pnZ-aD-A2w"/>
+                        <outlet property="qunThree" destination="mP3-It-3kv" id="xkz-yB-fKg"/>
+                        <outlet property="quunTwo" destination="poB-7m-1j9" id="uWI-DH-Y66"/>
+                        <outlet property="stepperThree" destination="mP3-It-3kv" id="ShC-Ul-aJ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
