@@ -12,8 +12,6 @@
 		3A46DECD2179461600930E01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A46DECB2179461600930E01 /* Main.storyboard */; };
 		3A46DECF2179461A00930E01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A46DECE2179461A00930E01 /* Assets.xcassets */; };
 		3A46DED22179461A00930E01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A46DED02179461A00930E01 /* LaunchScreen.storyboard */; };
-		3A46DEDA2179487F00930E01 /* notepad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A46DED92179487F00930E01 /* notepad.png */; };
-		3A46DEDC2179496000930E01 /* notepad2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A46DEDB2179496000930E01 /* notepad2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +22,6 @@
 		3A46DECE2179461A00930E01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A46DED12179461A00930E01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A46DED32179461A00930E01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A46DED92179487F00930E01 /* notepad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notepad.png; sourceTree = "<group>"; };
-		3A46DEDB2179496000930E01 /* notepad2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notepad2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +57,7 @@
 				3A46DEC72179461600930E01 /* AppDelegate.swift */,
 				3A46DEC92179461600930E01 /* ViewController.swift */,
 				3A46DECB2179461600930E01 /* Main.storyboard */,
-				3A46DED92179487F00930E01 /* notepad.png */,
 				3A46DECE2179461A00930E01 /* Assets.xcassets */,
-				3A46DEDB2179496000930E01 /* notepad2.png */,
 				3A46DED02179461A00930E01 /* LaunchScreen.storyboard */,
 				3A46DED32179461A00930E01 /* Info.plist */,
 			);
@@ -128,9 +122,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A46DEDC2179496000930E01 /* notepad2.png in Resources */,
 				3A46DED22179461A00930E01 /* LaunchScreen.storyboard in Resources */,
-				3A46DEDA2179487F00930E01 /* notepad.png in Resources */,
 				3A46DECF2179461A00930E01 /* Assets.xcassets in Resources */,
 				3A46DECD2179461600930E01 /* Main.storyboard in Resources */,
 			);
