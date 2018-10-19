@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  iosMidTerm
 //
-//  Created by Dyana George on 10/18/18.
+//  Created by Dyana George Student ID 301026481 on 10/18/18.
 //  Copyright © 2018 Dyana George. All rights reserved.
 //
 
